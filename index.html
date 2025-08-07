@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rashad's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar" data-aos="fade-down">
+      <div class="logo" data-aos="fade-right">CS Student</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌓</button>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1>Hi, I'm Rashad</h1>
+    <p>A Frontend Developer focused on creating beautiful and user-friendly websites.</p>
+    <p>Currently studying Computer Science at ELTE and interning as a frontend developer.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
+
+<section id="about" class="section" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>I’m a Computer Science student at ELTE with a strong interest in web development. I love solving problems with clean, modern code and turning designs into responsive, accessible websites. I’m passionate about learning and always looking for ways to grow.</p>
+  <p>In my free time, I contribute to open-source projects and build small tools that solve everyday problems. I also enjoy UI/UX design and continually explore ways to improve the user experience.</p>
+
+  <a href="cv.pdf" download class="btn" aria-label="Download Resume PDF">Download My CV</a>
+</section>
+
+
+  <section id="skills" class="section" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li data-aos="zoom-in">HTML5</li>
+      <li data-aos="zoom-in">CSS3</li>
+      <li data-aos="zoom-in">JavaScript (ES6+)</li>
+      <li data-aos="zoom-in">Responsive Design</li>
+      <li data-aos="zoom-in">Git & GitHub</li>
+      <li data-aos="zoom-in">Figma & UI Design</li>
+      <li data-aos="zoom-in">Python (Basic)</li>
+      <li data-aos="zoom-in">C Programming (Basics)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card" data-aos="flip-left">
+        <h3>Food Ordering App</h3>
+        <p>A multi-restaurant food ordering system built in Python. Includes order history, file saving, and a text-based menu interface.</p>
+      </div>
+      <div class="project-card" data-aos="flip-left">
+        <h3>Portfolio Website</h3>
+        <p>A fully responsive personal website created using HTML, CSS, and JavaScript. Includes sections like About, Projects, and Contact.</p>
+      </div>
+      <div class="project-card" data-aos="flip-left">
+        <h3>Landing Page</h3>
+        <p>A modern, mobile-first landing page designed using Flexbox and CSS animations to promote a fictional startup.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form id="contactForm" data-aos="fade-up">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>You can also reach me on <a href="mailto:reshadcenizade@email.com">email</a> or connect on <a href="https://www.linkedin.com/in/rashad-janizada-a20129335/">LinkedIn</a>.</p>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Rashad Janizada. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
